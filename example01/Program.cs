@@ -11,7 +11,7 @@ int[] CreatrArrayInt(int size)
     int[] array = new int[size];
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write("Введите элемент массива ");
+        Console.Write("Введите число  ");
         array[i] = Convert.ToInt32(Console.ReadLine());
     }
     return array;
@@ -19,13 +19,13 @@ int[] CreatrArrayInt(int size)
 
 void PrintArray(int[] array)
 {
-    Console.Write("[");
+   
     for (int i = 0; i < array.Length; i++)
     {
         if (i < array.Length - 1) Console.Write($"{array[i]}, ");
         else Console.Write($"{array[i]}");
     }
-    Console.Write("]");
+   
 }
 
 int PositiveNumbers(int[] array)
